@@ -1,77 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>To do App</title>
   <link rel="stylesheet" href="./styles.css">
-
-  <title>Frontend Mentor | Todo app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
-
 <body>
-  <div class="wrapper">
-    <div class="image">
-      <img src="./images/bg-desktop-light.jpg" alt="">
+  <header id="heads">
+    <div class="img">
+        <img src="./images/bg-desktop-dark.jpg" alt="" id="darkscreen" width="100%" height="400px">
+        <img src="./images/bg-desktop-light.jpg" alt="" id="lightscreen" width="100%" height="400px">
+      <div class="uppersection">
+        <h1>Todo</h1>
+      <div class="changetheme">
+        <button class="darktheme" id="darktheme">
+          <img src="./images/icon-moon.svg" alt="">
+        </button>
+        <button class="lighttheme" id="lighttheme">
+          <img src="./images/icon-sun.svg" alt="">
+        </button>
+      </div>
+      </div>
+      
     </div>
+
     <div id="main">
-      <div id="todo">
-        <h2>Todo</h2>
-        <img src="./images/icon-moon.svg" alt="moon">
+      <div class="addsection">
+        <input type="text" placeholder="Create a new todo" id="typechange">
+        <button class="listadd">Add</button>
       </div>
-      <div id="createtodo">
-        <input type="text" id="tex" placeholder="create to do...">
-        <button>Todo add</button>
-      </div>
-      <div id="todolist">
+    </div>
+    <div  id="subdiv">
+     <div #="todo">
         <ul>
-          <li>
-            <input type="radio" name="todo" class="todo">jog around the park
-          </li>
-          <li>
-            <input type="radio" name="todo" class="todo">10 mins meditation
-          </li>
-          <li>
             <li>
-              <input type="radio" class="todo">Read for 1 Hour
+                <input type="checkbox" id="underline" class="item-checkbox">
+                <label id="element">Complete online JavaScript course</label>
             </li>
             <li>
-              <input type="radio" class="todo">Pick up Gloceries
+                <input type="checkbox" class="item-checkbox">
+                <label class="element">Jog around the park 3x</label>
             </li>
-           <li><input type="radio" class="todo">Complete Todo App on Frontend Mentor</input>
-          </li>
+            <li>
+                <input type="checkbox" class="item-checkbox">
+                <label class="element">10 minutes meditation</label>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox">
+                <label id="element">Read for 1 hour</label>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox">
+                <label id="element">Pick up groceries</label>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox">
+                <label id="element">Complete Todo App on Frontend Mentor</label>
+            </li>
         </ul>
-        <div id="bottom">
-          <h4>5mins left</h4>
-          <p><span class="list">All</span></p>
-          <p><span class="list">Active</span></p>
-          <p><span class="list">Completed</span> </p>
-         <button id="clear">clear complete</button>
-        </div>
-      </div>
-    </div>
+  </div>
 
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">johnson mwangi</a>.
+  <div class="lowersection">
+    <div class="listitems">
+      <h2 id="remaining-items"> 6 items left</h2>
     </div>
-    <script src="./script.js"></script>
+     <div>
+      <ul class="statusitem">
+        <li id="btnactive">All</li>
+        <li>Active</li>
+        <li>Completed</li>
+        <li>Clear Completed</li>
+      </ul>
+     </div>
+     </div>
+ 
+  
+  </div>
+  <div class="footer">
+    <p class="lowest">Drag and drop to reorder list</p>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">johnson mwangi</a>.
+  </div>      
+    </div>
+  </div>
+ 
+
+  </header>
+
+
+  <script src="./script.js"></script>
+
 </body>
-
 </html>

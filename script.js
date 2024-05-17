@@ -1,42 +1,70 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const list = document.querySelector('#todolist ul');
-    const forms = document.forms;
-    const addform = forms['form'];
+//javascript by johnson
+document.addEventListener("DOMContentLoaded", ()=> {
 
-    // delete movies
-
-    list.addEventListener("click", (e) => {
-        if (e.target.className == "todo") {
-            const li = e.target.parentElement;
-            li.parentNode.removeChild(li);
-        }
-    })
-
-    // add movies
-
-    addform.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        //create elements
-        const value = document.getElementById('text').value;
-        const li = document.createElement('li');
-        const movieName = document.createElement('span');
-        const deleteBtn = document.createElement('span');
-
-        //add text content
-        movieName.textContent = value;
-        deleteBtn.textContent = '';
-
-        //add classes
-        movieName.classList.add('');
-        deleteBtn.classList.add('');
-
-        //append to DOM
-        li.appendChild(movieName);
-        li.appendChild(deleteBtn);
-        list.appendChild(li);
-        //clear inputs
-        document.getElementById('tex').value = '';
-
-    })
-})
+    let lighttheme= document.getElementById('lighttheme');
+    let darktheme= document.getElementById('darktheme');
+    
+    lighttheme.addEventListener('click', changetheme=() => {
+        // document.body.classList.remove('dark');
+        // document.body.classList.add('light');
+        lighttheme.style.display = 'none';
+        darktheme.style.display = 'block';
+        document.getElementById('darkscreen').style.display = 'none';
+        document.getElementById('heads').style.backgroundColor = 'white';
+        document.getElementById('lightscreen').style.display = 'block';
+        document.getElementById('container').style.backgroundColor = 'white';
+    });
+    darktheme.addEventListener('click', changetheme=() => {
+        // document.body.classList.remove('dark');
+        // document.body.classList.add('light');
+        lighttheme.style.display = 'block';
+        darktheme.style.display = 'none';
+        document.getElementById('darkscreen').style.display = 'block';
+        document.getElementById('lightscreen').style.display = 'none';
+        document.getElementById('heads').style.backgroundColor = 'hsl(233, 14%, 35%)';
+        document.getElementById('container').style.backgroundColor = 'darkgray';
+        
+    });
+    
+    
+    const checkbox = document.getElementById('underline');
+    const targetElement = document.getElementById('element');
+    
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        targetElement.style.textDecoration = 'line-through';
+        targetElement.style.color = 'dimgray';
+      } else {
+        targetElement.style.textDecoration = 'none';
+        targetElement.style.color = 'black';
+      }
+    });
+    
+    
+    
+    
+    
+    const itemCheckboxes = document.querySelectorAll('.item-checkbox');
+    const remainingItemsContainer = document.getElementById('remaining-items');
+    
+    itemCheckboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', () => {
+        updateRemainingItems();
+      });
+    });
+    
+    function updateRemainingItems() {
+      const uncheckedItems = Array.from(itemCheckboxes).filter(checkbox => !checkbox.checked);
+      const remainingItems = uncheckedItems.length;
+      remainingItemsContainer.textContent = `${remainingItems} items left`;
+    }
+    
+    
+    
+    let typechange =document.getElementById('typechange');
+    
+    typechange.addEventListener('change', () => {
+        if(input.click)
+        typechange.value = 'Currently typing...';
+    });
+    });
