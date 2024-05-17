@@ -15,7 +15,7 @@
     <div class="img">
         <img src="./images/bg-desktop-dark.jpg" alt="this is profile image" id="darkscreen" width="100%" height="400px">
         <img src="./images/bg-desktop-light.jpg" alt="this is profile image" id="lightscreen" width="100%" height="400px">
-      <div class="uppersection">
+      <div id="heading">
         <h1>Todo</h1>
       <div class="changetheme">
         <button class="darktheme" id="darktheme">
@@ -30,48 +30,48 @@
     </div>
 
     <div id="main">
-      <div class="addsection">
-        <input type="text" placeholder="Create a new todo" id="typechange">
-        <button class="listadd">Add</button>
+      <div id="add">
+        <input type="text" placeholder="Create a new todo" id="change">
+        <button id="list">Add</button>
       </div>
     </div>
     <div  id="subdiv">
      <div #="todo">
         <ul>
             <li>
-                <input type="checkbox" id="underline" class="item-checkbox">
+                <input type="checkbox" id="underline" class="checkbox">
                 <label id="element">Complete online JavaScript course</label>
             </li>
             <li>
-                <input type="checkbox" class="item-checkbox">
+                <input type="checkbox" class="checkbox">
                 <label class="element">Jog around the park 3x</label>
             </li>
             <li>
-                <input type="checkbox" class="item-checkbox">
+                <input type="checkbox" class="checkbox">
                 <label class="element">10 minutes meditation</label>
             </li>
             <li>
-                <input type="checkbox" class="item-checkbox">
+                <input type="checkbox" class="checkbox">
                 <label id="element">Read for 1 hour</label>
             </li>
             <li>
-                <input type="checkbox" class="item-checkbox">
+                <input type="checkbox" class="checkbox">
                 <label id="element">Pick up groceries</label>
             </li>
             <li>
-                <input type="checkbox" class="item-checkbox">
+                <input type="checkbox" class="checkbox">
                 <label id="element">Complete Todo App on Frontend Mentor</label>
             </li>
         </ul>
   </div>
 
 
-  <div class="lowersection">
+  <div class="lower">
     <div class="listitems">
-      <h2 id="remaining-items"> 6 items left</h2>
+      <h2 id="items-left"> 6 items left</h2>
     </div>
      <div>
-      <ul class="statusitem">
+      <ul id="itemstate">
         <li id="btnactive">All</li>
         <li>Active</li>
         <li>Completed</li>
@@ -82,18 +82,19 @@
  
   
   </div>
-  <div class="footer">
-    <p class="lowest">Drag and drop to reorder list</p>
+  <div id="bottom">
+    <p id="lastitem">Drag and drop to reorder list</p>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">johnson mwangi</a>.
-  </div>      
+  
     </div>
   </div>
  
 
   </header>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">johnson mwangi</a>.
+  </div>      
 
 
   <script src="./script.js"></script>

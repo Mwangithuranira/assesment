@@ -1,5 +1,5 @@
 header{
-    background-color:hsl(233, 13%, 25%);
+    background-color:rgb(80, 76, 76);
     margin-bottom: 999px;
     height: 121vh;
 
@@ -10,23 +10,15 @@ header{
     left: 25%;
     width: 40%;
     margin: 0 auto;
-    background-color: rgb(88, 82, 82);
+    background-color: rgb(129, 120, 120);
     border: 3px ;
     color: whitesmoke;
-}
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-    
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
 }
 .imageprofile{
     position: relative;
     width: 100%;
 }
-.uppersection{
+#heading{
     position: absolute;
     top: 15%; 
     left: 25%;
@@ -40,12 +32,12 @@ header{
     top: 30%;
     left: 25%;
 }
-.addsection input{
+#add input{
     width: 480px;
     padding: 15px;
     border-radius: 5px 0 0 5px;
 }
-.listadd{
+#list{
     padding: 15px;
     border-radius: 0px 5px 5px 0;
     display: none;
@@ -71,14 +63,14 @@ h1{
 .darktheme{
     display: none;
 }
-.lowersection{
+.lower{
     
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.statusitem{
+#itemstate{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -88,14 +80,14 @@ h1{
     border-radius: 5px;
     cursor: pointer;
 }
-.statusitem li:hover{
-    color: rgb(235, 227, 227) 
+#itemstate li:hover{
+    color:rgb(8, 114, 8);
 }
 #btnactive{
     color: rgb(63, 63, 124);
     
 }
-.lowest{
+#lastitem{
     text-align: center;
     color: whitesmoke;
 }
@@ -113,6 +105,7 @@ h1{
     align-items: center;
     padding: 0.5rem 0.1;
     border-bottom: 1px solid #444;
+
 }
 
 #todo li input[type="checkbox"] {
@@ -137,7 +130,7 @@ h1{
     margin-left: 2rem;
     font-size: 2rem;
 } 
-.footer{
+#bottom{
     display: none ;
 
 
@@ -149,13 +142,10 @@ h1{
         background-repeat: no-repeat;
         background-position: cover;
     }
-    .img img{
+    #img img{
         display: none;
     }
-    .searchentry{
-        margin: 100px auto;
-    }
-    .img{
+    #img{
         position: relative;
         width: 100%;
     }

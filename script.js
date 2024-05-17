@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
     
     
     
-    const itemCheckboxes = document.querySelectorAll('.item-checkbox');
-    const remainingItemsContainer = document.getElementById('remaining-items');
+    const itemCheckboxes = document.querySelectorAll('.checkbox');
+    const remainingItemsContainer = document.getElementById('items-left');
     
     itemCheckboxes.forEach(checkbox => {
       checkbox.addEventListener('change', () => {
@@ -56,12 +56,12 @@ document.addEventListener("DOMContentLoaded", ()=> {
     function updateRemainingItems() {
       const uncheckedItems = Array.from(itemCheckboxes).filter(checkbox => !checkbox.checked);
       const remainingItems = uncheckedItems.length;
-      remainingItemsContainer.textContent = `${remainingItems} items left`;
+      remainingItemsContainer.textContent = `${remainingItems} items-left`;
     }
     
     
     
-    let typechange =document.getElementById('typechange');
+    let typechange =document.getElementById('change');
     
     typechange.addEventListener('change', () => {
         if(input.click)
