@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="image">
+      <img src="./images/bg-desktop-light.jpg" alt="">
+    </div>
+    <div id="main">
+      <div id="todo">
+        <h2>Todo</h2>
+        <img src="./images/icon-moon.svg" alt="moon">
+      </div>
+      <div id="createtodo">
+        <input type="text" id="tex" placeholder="create to do...">
+        <button>Todo add</button>
+      </div>
+      <div id="todolist">
+        <ul>
+          <li>
+            <input type="radio" name="todo" class="todo">jog around the park
+          </li>
+          <li>
+            <input type="radio" name="todo" class="todo">10 mins meditation
+          </li>
+          <li>
+            <input type="radio" class="todo">
+            <input type="radio" class="todo">
+            <input type="radio" class="todo">
+            <input type="radio" class="todo">
+          </li>
+        </ul>
+        <div id="bottom">
+          <h4>5mins left</h4>
+          <p><span class="list">All</span></p>
+          <p><span class="list">Active</span></p>
+          <p><span class="list">Completed</span> </p>
+         <button id="clear">clear complete</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">johnson mwangi</a>.
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
